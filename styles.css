@@ -1,0 +1,40 @@
+body {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+}
+
+.navbar, .footer {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.jumbotron {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    animation: slideUp 1.5s ease-in-out;
+}
+
+.input-group .form-control, .input-group .btn {
+    border-radius: 0;
+}
+
+.footer {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
