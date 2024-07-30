@@ -1,13 +1,15 @@
-/* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
+    background-image: url('pictures/back.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
     color: #333333;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 a {
@@ -20,13 +22,30 @@ a:hover {
 }
 
 .navbar {
-    background-color: #343a40;
+    background-color: rgba(0, 0, 0, 0); 
+    backdrop-filter: blur(20px); 
     color: #ffffff;
     padding: 0.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; 
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-shadow: none; 
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center; 
+}
+
+.navbar-nav .nav-item {
+    margin: 0 10px; 
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff ; 
+    font-size: 1.25rem; 
+    font-weight: bold; 
 }
 
 .container {
@@ -123,7 +142,6 @@ a:hover {
     color: #ffbb00;
     transition: color 0.3s;
 }
-
 
 .footer {
     background-color: #343a40;
