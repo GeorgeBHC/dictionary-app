@@ -26,10 +26,11 @@ document.getElementById('search-form').addEventListener('submit', function(event
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const ratings = document.querySelectorAll('.rating input');
+    const ratings = document.querySelectorAll('.rating input[type="radio"]');
     ratings.forEach(rating => {
         rating.addEventListener('change', function() {
             alert('We really appreciate your rating, thank you!');
         });
     });
 });
+
