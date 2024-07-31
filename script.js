@@ -25,12 +25,5 @@ document.getElementById('search-form').addEventListener('submit', function(event
         .catch(error => console.error('Error:', error));
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const ratings = document.querySelectorAll('.rating input[type="radio"]');
-    ratings.forEach(rating => {
-        rating.addEventListener('change', function() {
-            alert('We really appreciate your rating, thank you!');
-        });
-    });
-});
+
 
